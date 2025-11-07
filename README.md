@@ -19,9 +19,4 @@ Mỗi thuật toán đều **in ra trạng thái mảng sau từng bước xử 
 
 ---
 
-## ⚙️ Cách biên dịch và chạy chương trình
 
-### 1️⃣ Biên dịch (Compile)
-Mở Git Bash hoặc Terminal trong thư mục chứa code, gõ:
-```bash
-g++ -o sapxep sapxepnhanh.cpp

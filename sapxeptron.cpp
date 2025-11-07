@@ -1,24 +1,18 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
-// ?? Khai báo các hàm (prototype)
 void inCaiMang(vector<int> &mang, string ghiChu = "");
 void sapXepNhanh(vector<int> &mang, int trai, int phai);
 int tachMang(vector<int> &mang, int trai, int phai);
 void tronHaiMang(vector<int> &mang, int trai, int giua, int phai);
 void sapXepTron(vector<int> &mang, int trai, int phai);
-
-// ?? Hàm in m?ng
 void inCaiMang(vector<int> &mang, string ghiChu) {
     cout << ghiChu;
     for (int x : mang) cout << x << " ";
     cout << endl;
 }
-
-// ? QUICK SORT
 int tachMang(vector<int> &mang, int trai, int phai) {
-    int chot = mang[phai]; // ph?n t? ch?t
+    int chot = mang[phai]; 
     int i = trai - 1;
     for (int j = trai; j < phai; j++) {
         if (mang[j] < chot) {
@@ -38,8 +32,6 @@ void sapXepNhanh(vector<int> &mang, int trai, int phai) {
         sapXepNhanh(mang, pi + 1, phai);
     }
 }
-
-// ?? MERGE SORT
 void tronHaiMang(vector<int> &mang, int trai, int giua, int phai) {
     int n1 = giua - trai + 1;
     int n2 = phai - giua;
@@ -78,8 +70,6 @@ void sapXepTron(vector<int> &mang, int trai, int phai) {
         tronHaiMang(mang, trai, giua, phai);
     }
 }
-
-// ?? HÀM MAIN
 int main() {
     vector<int> caiMang1 = {7, 2, 1, 6, 8, 5, 3, 4};
     vector<int> caiMang2 = caiMang1;

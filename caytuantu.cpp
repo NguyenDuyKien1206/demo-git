@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-/* ===== PH?N CÂY TU?N T? ===== */
 #define MAX 50
 int cay[MAX];
 int dem = 0;
@@ -29,7 +28,7 @@ void duyetTruocMang(int i) {
     }
 }
 
-/* ===== PH?N CÂY MÓC N?I ===== */
+
 struct Nut {
     int gt;
     Nut* trai;
@@ -52,7 +51,6 @@ void duyetTruocConTro(Nut* n) {
     }
 }
 
-/* ===== CH? DUY NH?T 1 MAIN ===== */
 int main() {
     cout << "Cay tuan tu: ";
     themGoc(1);
